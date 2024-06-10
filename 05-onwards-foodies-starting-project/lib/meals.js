@@ -39,7 +39,7 @@ export async function saveMeal(meal) {
     `
     INSERT INTO MEALS
       (title, summary, instructions, creator, creator_email, image, slug)
-    VALUES(
+    VALUES (
       @title,
       @summary,
       @instructions,

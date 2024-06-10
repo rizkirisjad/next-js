@@ -1,11 +1,10 @@
 /** @format */
-
 'use server';
 
-import { redirect } from 'next/dist/server/api-utils';
+import { redirect } from 'next/navigation';
 import { saveMeal } from './meals';
 
-export async function shareMeal({ formData }) {
+export async function shareMeal(formData) {
   const meal = {
     title: formData.get('title'),
     summary: formData.get('summary'),
@@ -16,5 +15,6 @@ export async function shareMeal({ formData }) {
   };
 
   await saveMeal(meal);
+
   redirect('/meals');
 }
