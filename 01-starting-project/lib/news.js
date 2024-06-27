@@ -30,7 +30,7 @@ export function getAvailableNewsMonths(year) {
       }
     }
     return months;
-  }, []).sort((a, b) => b - a);
+  }, []).sort((a, b) => a - b);
 }
 
 export function getNewsForYear(year) {
