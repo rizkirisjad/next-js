@@ -1,4 +1,5 @@
 /** @format */
+import sql from 'better-sqlite3';
 
 import { DUMMY_NEWS } from '@/dummy-news';
 
