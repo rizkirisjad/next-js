@@ -1,3 +1,5 @@
+/** @format */
+
 export default function LikeButton() {
   return (
     <button className="like-button">
